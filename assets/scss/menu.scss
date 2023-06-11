@@ -1,0 +1,115 @@
+.menu {
+  padding: $size-8 $size-base;
+}
+
+// TOP
+.menu__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: $size-3;
+}
+
+.menu__social-list {
+  display: flex;
+  align-items: center;
+  gap: $size-1;
+}
+
+.menu__social-link {
+  display: block;
+  font-size: $size-4;
+  color: $neutral-800;
+  padding: $size-0 $size-1;
+}
+
+.menu__actions-list {
+  display: flex;
+  align-items: center;
+  gap: $size-2;
+}
+
+.menu__actions-button {
+  background-color: transparent;
+  padding: $size-0 $size-1;
+}
+
+.menu__actions-button--cart {
+  font-size: $size-3;
+}
+
+.menu__actions-button--profile, 
+.menu__actions-button--search {
+  font-size: $size-4;
+}
+
+// BOTTOM
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $size-1;
+}
+
+.menu__list-link {
+  text-transform: uppercase;
+  font-size: $size-3;
+  color: $neutral-600;
+  padding: $size-0 $size-1;
+}
+
+.menu__list-link--icon {
+  display: flex;
+  align-items: center;
+  gap: $size-0;
+}
+
+// MENU MOBILE CONFIG 
+.menu__social-list {
+  @include Responsive(mobile) {
+    display: none;
+  }
+}
+
+.menu__button-mobile {
+  display: none;
+  background-color: transparent;
+  padding: $size-0 $size-1;
+
+  font-size: $size-4;
+  color: $neutral-800;
+
+  @include Responsive(mobile) {
+    display: block;
+  }
+}
+
+.menu__actions-item:nth-child(3) {
+  @include Responsive(mobile) {
+    display: none;
+  }
+}
+
+.menu__list {
+  @include Responsive(mobile) {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: $neutral-100;
+  }
+}
+
+.menu__list.active {
+  @include Responsive(mobile) {
+    display: flex;
+  }
+}
+
+.menu__top {
+  @include Responsive(mobile-sm) {
+    flex-direction: column;
+    gap: $size-3;
+  }
+}

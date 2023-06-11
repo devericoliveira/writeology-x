@@ -1,0 +1,58 @@
+// SIZES
+$size-base: 0;
+$size-0: 0.4rem;
+$size-1: 0.8rem;
+$size-2: 1.2rem;
+$size-3: 1.6rem;
+$size-4: 1.8rem;
+$size-5: 2rem;
+$size-6: 2.4rem;
+$size-7: 2.8rem;
+$size-8: 3.2rem;
+$size-9: 3.6rem;
+$size-10: 4rem;
+$size-11: 4.4rem;
+$size-12: 4.8rem;
+$size-13: 5.2rem;
+$size-14: 5.6rem;
+$size-15: 6rem;
+$size-16: 6.4rem;
+$size-17: 6.8rem;
+$size-18: 7.2rem;
+
+// COLORS
+$neutral-100: #ffffff;
+$neutral-200: #fcfcfc;
+$neutral-300: #f0f0f0;
+$neutral-400: #d5d5d5;
+$neutral-500: #b1b1b1;
+$neutral-600: #727272;
+$neutral-700: #353535;
+$neutral-800: #131313;
+
+:root {
+  font-size: 62.5%;
+}
+
+// MIXINS 
+
+// RESPONSIVE
+@mixin Responsive($type) {
+  @if $type == mobile-sm {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  } 
+  
+  @else if $type == mobile {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  } 
+
+  @else if $type == tablet {
+    @media screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+}

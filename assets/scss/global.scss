@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-inline: $size-4;
+  
+  @include Responsive(mobile) {
+    padding-inline: $size-2;
+  }
+}
