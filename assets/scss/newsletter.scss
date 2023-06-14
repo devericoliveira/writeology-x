@@ -1,0 +1,63 @@
+.newsletter {
+  padding-block: $size-8;
+  text-align: center;
+}
+
+.newsletter .container {
+  max-width: 57rem;
+}
+
+.newsletter__header-title {
+  font-size: $size-6;
+  color: $neutral-800;
+  margin-bottom: $size-3;
+}
+
+.newsletter__header-description {
+  font-size: $size-3;
+  color: $neutral-800;
+  line-height: 1.5;
+  margin-bottom: $size-5;
+}
+
+.newsletter__form {
+  display: flex;
+  gap: $size-3;
+  margin-bottom: $size-5;
+
+  @include Responsive(mobile) {
+    flex-direction: column;
+  }
+}
+
+.newsletter__form-input {
+  flex: 1;
+  border: $size-base;
+  box-shadow: $size-base $size-base 1px $neutral-600;
+  padding: $size-3 $size-3;
+
+  font-size: $size-3;
+  color: $neutral-600;
+  border-radius: $size-1;
+}
+
+.newsletter__form-button {
+  font-weight: 700;
+  font-size: $size-3;
+  background-color: $neutral-800;
+  color: $neutral-100;
+  padding: $size-4 $size-7;
+  border-radius: $size-1;
+}
+
+.newsletter__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $size-4;
+}
+
+.newsletter__link {
+  font-size: $size-4;
+  color: $neutral-800;
+}
