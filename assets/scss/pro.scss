@@ -57,6 +57,11 @@
   gap: $size-1;
 
   text-transform: capitalize;
+  transition: all 0.3s;
+  
+  &:hover {
+    top: 49%;
+  }
 
   @include Responsive(mobile-sm) {
     flex-direction: column;

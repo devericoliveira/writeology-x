@@ -96,6 +96,10 @@ button {
   font-size: 1.8rem;
   color: #131313;
   padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+}
+.menu__social-link:hover {
+  color: #727272;
 }
 
 .menu__actions-list {
@@ -130,6 +134,10 @@ button {
   font-size: 1.6rem;
   color: #727272;
   padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+}
+.menu__list-link:hover {
+  color: #131313;
 }
 
 .menu__list-link--icon {
@@ -223,6 +231,7 @@ button {
 }
 
 .lastPost__badge {
+  cursor: pointer;
   color: #131313;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -232,6 +241,10 @@ button {
   display: inline-block;
   padding: 0.8rem 1.2rem;
   background-color: #ffffff;
+  transition: all 0.3s;
+}
+.lastPost__badge:hover {
+  background-color: #d5d5d5;
 }
 
 .lastPost__title {
@@ -379,11 +392,18 @@ button {
   display: flex;
   align-items: center;
   gap: 3.2rem;
+  transition: all 0.3s;
+}
+.articles__item:hover {
+  margin-left: 0.8rem;
 }
 @media screen and (max-width: 1000px) {
   .articles__item {
     flex-direction: column;
     align-items: initial;
+  }
+  .articles__item:hover {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -687,6 +707,10 @@ button {
   align-items: center;
   gap: 0.8rem;
   text-transform: capitalize;
+  transition: all 0.3s;
+}
+.pro__block-button:hover {
+  top: 49%;
 }
 @media screen and (max-width: 400px) {
   .pro__block-button {
@@ -799,6 +823,10 @@ button {
   color: #ffffff;
   padding: 1.8rem 2.8rem;
   border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+.newsletter__form-button:hover {
+  transform: translateY(-0.8rem);
 }
 
 .newsletter__list {
@@ -809,8 +837,13 @@ button {
 }
 
 .newsletter__link {
+  padding: 0.8rem 1.2rem;
   font-size: 1.8rem;
   color: #131313;
+  transition: all 0.3s;
+}
+.newsletter__link:hover {
+  color: #727272;
 }
 
 .footer {

@@ -38,6 +38,7 @@
 }
 
 .lastPost__badge {
+  cursor: pointer;
   color: $neutral-800;
   font-size: $size-2;
   text-transform: uppercase;
@@ -48,6 +49,11 @@
   display: inline-block;
   padding: $size-1 $size-2;
   background-color: $neutral-100;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $neutral-400;
+  }
 }
 
 .lastPost__title {

@@ -22,6 +22,12 @@
   font-size: $size-4;
   color: $neutral-800;
   padding: $size-0 $size-1;
+
+  transition: all 0.3s;
+
+  &:hover {
+   color: $neutral-600; 
+  }
 }
 
 .menu__actions-list {
@@ -58,6 +64,12 @@
   font-size: $size-3;
   color: $neutral-600;
   padding: $size-0 $size-1;
+
+  transition: all 0.3s;
+
+  &:hover {
+    color: $neutral-800;
+  }
 }
 
 .menu__list-link--icon {
