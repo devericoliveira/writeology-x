@@ -1,0 +1,14 @@
+.footer {
+  padding-block: $size-6;
+  text-align: center;
+}
+
+.footer__description {
+  color: $neutral-600;
+  font-size: $size-3;
+}
+
+.footer__link {
+  color: $neutral-800;
+  text-decoration: underline;
+}

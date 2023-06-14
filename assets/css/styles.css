@@ -813,4 +813,19 @@ button {
   color: #131313;
 }
 
+.footer {
+  padding-block: 2.4rem;
+  text-align: center;
+}
+
+.footer__description {
+  color: #727272;
+  font-size: 1.6rem;
+}
+
+.footer__link {
+  color: #131313;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */
